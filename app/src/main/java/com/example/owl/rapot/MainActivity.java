@@ -7,7 +7,16 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -19,108 +28,87 @@ import org.xml.sax.Parser;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
-public class MainActivity extends ListActivity {
+public class MainActivity extends AppCompatActivity {
 
-    public ListView lv;
+    private Toolbar toolbar;
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
+    private int[] tabIcons = {
+            R.drawable.padnote64,
+            R.drawable.home64,
+            R.drawable.forum64
 
-    private ProgressDialog pDialog;
-
-    private static String url ="http://192.168.43.190/tutorial/login_register/crud/getNilai.php";
-
-    //JSON Node names
-    private static final String TAG_RESULT="result";
-    private static final String TAG_ID="id";
-    private static final String TAG_MAPEL="mapel";
-    private static final String TAG_NILAI="nilai";
-
-    JSONArray result = null;
-
-    ArrayList<HashMap<String,String>> nilaiList;
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        nilaiList = new ArrayList<HashMap<String,String>>();
-        ListView lv = getListView();
-        new GetNilai().execute();
 
+        toolbar = (Toolbar) findViewById(R.id.Toolbar);
+        setSupportActionBar(toolbar);
+
+        viewPager = (ViewPager) findViewById(R.id.viewpager);
+        setupViewPager(viewPager);
+
+        tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
+        setupTabIcons();
     }
 
-    private class GetNilai extends AsyncTask<Void,Void,Void> {
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            pDialog = new ProgressDialog(MainActivity.this);
-            pDialog.setMessage("Please Wait..");
-            pDialog.setCancelable(false);
-            pDialog.show();
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.list_actionbar,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    private void setupTabIcons() {
+        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
+        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
+        tabLayout.getTabAt(2).setIcon(tabIcons[2]);
+    }
+
+
+    private void setupViewPager(ViewPager viewPager){
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new FragmentContent(),"");
+        adapter.addFragment(new FragmentHome(),"");
+        adapter.addFragment(new FragmentSetting(),"");
+        viewPager.setAdapter(adapter);
+
+    }
+    class ViewPagerAdapter extends FragmentPagerAdapter {
+        private final List<Fragment> mFragmentList = new ArrayList<>();
+        private final List<String> mFragmentTitleList = new ArrayList<>();
+
+        public ViewPagerAdapter(FragmentManager fragmentManager) {
+            super(fragmentManager);
         }
 
         @Override
-        protected Void doInBackground(Void... arg0) {
-            ServiceHandler sh = new ServiceHandler();
-
-            String jsonstr = sh.makeServiceCall(url,ServiceHandler.GET);
-            Log.d("Response: ","> "+jsonstr);
-            if(jsonstr != null){
-                try{
-                    JSONObject jsonObject = new JSONObject(jsonstr);
-                    result = jsonObject.getJSONArray(TAG_RESULT);
-
-                    for (int i = 0;i < result.length();i++){
-                        JSONObject c = result.getJSONObject(i);
-
-                        String id = c.getString(TAG_ID);
-                        String mapel = c.getString(TAG_MAPEL);
-                        String nilai = c.getString(TAG_NILAI);
-                        int biji = Integer.parseInt(nilai);
-
-                        HashMap<String,String> hasil = new HashMap<String,String>();
-
-                        hasil.put(TAG_ID,id);
-                        hasil.put(TAG_MAPEL,mapel);
-                        hasil.put(TAG_NILAI,nilai);
-
-                        nilaiList.add(hasil);
-
-
-                        if(biji < 70){
-                            Intent intent = new Intent(MainActivity.this,Notification_activity.class);
-                            startActivity(intent);
-                            finish();
-                        }
-                    }
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }else{
-                Log.e("ServiceHandler","Couldn't get any data form url");
-            }
-
-            return null;
+        public Fragment getItem(int position) {
+            return mFragmentList.get(position);
         }
 
+
         @Override
-        protected void onPostExecute(Void aVoid) {
-            super.onPostExecute(aVoid);
-            if (pDialog.isShowing())
-                pDialog.dismiss();
-            /**
-             * Updating parsed JSON data into ListView
-             * */
+        public int getCount() {
+            return mFragmentList.size();
+        }
 
+        public void addFragment(Fragment fragment,String title){
+            mFragmentList.add(fragment);
+            mFragmentTitleList.add(title);
+        }
 
-            ListAdapter adapter = new SimpleAdapter(
-                    MainActivity.this, nilaiList,
-                    R.layout.list_item, new String[] { TAG_ID, TAG_MAPEL,
-                    TAG_NILAI }, new int[] { R.id.id,
-                    R.id.mapel, R.id.nilai });
-
-            setListAdapter(adapter);
-
+        public CharSequence getPageTitle(int position){
+            return mFragmentTitleList.get(position);
         }
     }
+
+
 }
+
