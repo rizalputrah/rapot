@@ -1,4 +1,0 @@
-CHANGED,C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\owl\rapot\RapotAdapter$RapotHolder$override.class
-CHANGED,C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\owl\rapot\FragmentContent$override.class
-CHANGED,C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\owl\rapot\RapotAdapter$override.class
-CHANGED,C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class

@@ -6,15 +6,36 @@
     android:orientation="vertical"
     android:id="@+id/linear"
     android:layout_gravity="center"
-    tools:context="com.example.owl.rapot.SplashScreen"
-    android:weightSum="1">
+    tools:context=".view.SplashScreen"
+    android:weightSum="1"
+    android:background="#26ae90">
 
 
     <ImageView
-        android:layout_width="271dp"
-        android:layout_height="match_parent"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:id="@+id/imageView"
-        android:src="@drawable/book"
-        android:layout_weight="0.37"
-        android:layout_gravity="center_horizontal" />
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_weight="0.50"
+        android:layout_marginTop="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.37"
+            android:progressTint="@color/colorPrimary"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+            <!--android:indeterminate="true"-->
+            <!--android:indeterminateDrawable="@xml/progress"/>-->
+    </RelativeLayout>
+
 </LinearLayout>

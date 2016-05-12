@@ -36,6 +36,10 @@
         "source": "C:\\Users\\OWL\\AndroidStudioProjects\\RAPOT\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
+        "merged": "C:\\Users\\OWL\\AndroidStudioProjects\\RAPOT\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\logo.png",
+        "source": "C:\\Users\\OWL\\AndroidStudioProjects\\RAPOT\\app\\src\\main\\res\\drawable-xxxhdpi\\logo.png"
+    },
+    {
         "merged": "C:\\Users\\OWL\\AndroidStudioProjects\\RAPOT\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
         "source": "C:\\Users\\OWL\\AndroidStudioProjects\\RAPOT\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png"
     },

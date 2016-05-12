@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.owl.rapot.SplashScreen" >
+        <activity android:name="com.example.owl.rapot.view.SplashScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,10 +31,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.owl.rapot.RegisterActivity" />
-        <activity android:name="com.example.owl.rapot.LoginActivity" />
-        <activity android:name="com.example.owl.rapot.Notification_activity" />
-        <activity android:name="com.example.owl.rapot.NotificationView" />
+        <activity android:name="com.example.owl.rapot.activity.RegisterActivity" />
+        <activity android:name="com.example.owl.rapot.activity.LoginActivity" />
+        <activity android:name="com.example.owl.rapot.activity.SharedPreference" />
     </application>
 
 </manifest>

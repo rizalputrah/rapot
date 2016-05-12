@@ -1,3 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="bc599eb9531da9d18bc58ec4eb0b1a1d895f6839">
+        <dex dex="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.2.0_11b098087597aebeebf42b8ac473a7fdb2662bd4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_e090a4ce2ef2baba482657b303f81d4559436e77\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_fddfe8452aba80493d972b26035a0244c10f0071\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_afaac0d2ee4dcde0181ce7d646373bdbea2a25e1\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4b1bd2253dbedbbb46e71dbd149832e3d7f8dd22">
+        <dex dex="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e60be053f84f55e952ca2d1af9262085eb0c795b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\OWL\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.2\f1bc476cc167b18e66c297df599b2377131a8947\gson-2.6.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.6.2_8a75944814db9b4f3929eb11f8df3d2c69acdb21\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\OWL\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_446ed06dd1ad188a28bcca6335def18d6abd710c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_03997cbaabb1b9229fb0133724c7517ee3376f97\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a6a4271049f843b3cd0635ee0166a9d623ef96e7">
+        <dex dex="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_6cd94ed9f048f8e23f9eb024e6d9a4413604a9dd\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\OWL\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.2\43eeae0b9fb087bb3194ba59ab63a38a32fbf3e\retrofit-2.0.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
+        <dex dex="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.0.2_aaebb25f4d75fcb273fe652f60010b60ba3299c5\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_f582422ad1761adccadc101c3c534e4a1282d3bb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_641942f830aa32c43daeae3b94c9026cf65672e4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_220505e1b93a2d46de61007bfe67afb235fb0a2f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\OWL\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.2\f8d87f15b94b8d74e7ccf61d7eedb558811cdb30\converter-gson-2.0.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.0.2_14831c71c18f97c70fbf874cc4e77675ab2f4ef4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\OWL\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_29a8ebbc4c973a73a7012a793f769006d9380a17\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\OWL\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="C:\Users\OWL\AndroidStudioProjects\RAPOT\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.2.0_6f236e5508c9ef3531427aa8a425f36e9c9a974b\classes.dex" />
+    </item>
+
+</items>
